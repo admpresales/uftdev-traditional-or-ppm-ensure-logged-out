@@ -50,13 +50,7 @@ public class UFTDeveloperTest extends UnitTestClassBase {
     @Test
     public void test() throws GeneralLeanFtException {
         //Reporter.Init(new ReportConfiguration());// Initialize the Reporter with default values
-        /*try {
-            Reporter.init();
-        } catch (ReportException e) {
-            e.printStackTrace();
-        }
 
-         */
         browser.navigate("http://nimbusserver.aos.com:8087");
         browser.sync();
         WebElement labelLOGONSUBMITBUTTONCAPTIONWebElement = browser.describe(WebElement.class, new WebElementDescription.Builder()
