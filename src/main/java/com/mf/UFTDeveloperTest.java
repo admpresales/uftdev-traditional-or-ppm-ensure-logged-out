@@ -53,10 +53,10 @@ public class UFTDeveloperTest extends UnitTestClassBase {
 
         browser.navigate("http://nimbusserver.aos.com:8087");
         browser.sync();
-        WebElement labelLOGONSUBMITBUTTONCAPTIONWebElement = browser.describe(WebElement.class, new WebElementDescription.Builder()
+        WebElement LogonWebElement = browser.describe(WebElement.class, new WebElementDescription.Builder()
 		    .className("button primary")
 		    .innerText("Sign-In").build());
-        if (labelLOGONSUBMITBUTTONCAPTIONWebElement.exists()){
+        if (LogonWebElement.exists()){
             try {
                 Reporter.reportEvent("Check Not Logged In","The PPM system prompted for credentials, exiting test", Status.Passed);
             } catch (ReportException e) {
